@@ -9,7 +9,7 @@
 		
 		include "conexao.inc";
 		
-		$sql = "SELECT * FROM teste_login WHERE login = '$vlogin'";
+		$sql = "SELECT * FROM tb_login WHERE login = '$vlogin'";
 		$res = mysqli_query($con,$sql);
 		$lin = mysqli_affected_rows($con);
 		
@@ -17,7 +17,7 @@
 			echo "O nome de usuário digitado já existe<br/>";
 			echo "<a href='form_cad.html'>Tentar outro nome</a>";
 		}else{
-			$sql = "INSERT INTO teste_login VALUES (NULL,'$vlogin','$vsenha')";
+			$sql = "INSERT INTO tb_login VALUES (NULL,'$vlogin','$vsenha')";
 			mysqli_query($con,$sql);
 			$lin = mysqli_affected_rows($con);
 
