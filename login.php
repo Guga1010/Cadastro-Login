@@ -9,7 +9,7 @@
 		
 		include "conexao.inc";
 		
-		$sql = "SELECT * FROM teste_login WHERE login = '$vlogin' AND senha = '$vsenha'";
+		$sql = "SELECT * FROM tb_login WHERE login = '$vlogin' AND senha = '$vsenha'";
 		$res = mysqli_query($con,$sql);
 		$lin = mysqli_affected_rows($con);
 		
