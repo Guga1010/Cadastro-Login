@@ -1,5 +1,4 @@
 <?php
-	//Antes de executar o código, primeiro deve-se criar a tabela "tb_login"
 
 	if(!isset($_POST['log_cad'])){
 		echo "Acesso indevido";
