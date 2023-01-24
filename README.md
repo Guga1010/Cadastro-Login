@@ -5,4 +5,4 @@
   
   Requisitos:
  1. É necessário ter um banco de dados "gugals", explicado no arquivo inc "conexao.inc" ou crie um com o nome desejado, porém o código deve ser alterado de acordo para funcionar
- 2. Crie uma tabela "tb_login"
+ 2. Crie uma tabela "tb_login" ou com o nome desejado, tendo 3 colunas,
