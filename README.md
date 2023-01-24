@@ -5,4 +5,4 @@
   
   Requisitos:
  1. É necessário ter um banco de dados "gugals", explicado no arquivo inc "conexao.inc" ou crie um com o nome desejado, porém o código deve ser alterado de acordo para funcionar.
- 2. Crie uma tabela "tb_login" ou com o nome desejado, tendo 3 colunas: código do tipo int sendo chave primária e auto incremento, login do tipo varchar(15), senha do tipo varchar(15).
+ 2. Crie uma tabela "tb_login" ou com o nome desejado, tendo 3 colunas: código do tipo int sendo chave primária e auto incremento, login do tipo varchar(15), senha do tipo varchar(15). Caso tenha criado uma tabela com nome diferente, modifique o código nos arquivos .php para que não ocorra erros. 
