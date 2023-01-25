@@ -1,0 +1,17 @@
+body{
+	background-color: springgreen;
+}
+
+h2{
+	text-align: center;
+}
+
+form{
+	margin: auto;
+	width: 30%;
+	border: 2px solid black;
+	padding: 150px 0;
+	text-align: center;
+}
+
+
