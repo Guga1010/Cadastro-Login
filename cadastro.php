@@ -10,7 +10,7 @@
 		
 		include "conexao.inc";
 		
-		$sql = "SELECT * FROM tb_login WHERE login = '$vlogin'";
+		$sql = "SELECT * FROM tb_login WHERE login = '$vlogin'"; // Alterar, caso tenha criado uma tabela com nome diferente
 		$res = mysqli_query($con,$sql);
 		$lin = mysqli_affected_rows($con);
 		
@@ -19,7 +19,7 @@
 			echo "<a href='form_cad.html'>Tentar outro nome</a>";
 		}else{
 			
-			$sql = "SELECT * FROM tb_login WHERE email = '$vemail'";
+			$sql = "SELECT * FROM tb_login WHERE email = '$vemail'"; // Alterar, caso tenha criado uma tabela com nome diferente
 			$res = mysqli_query($con,$sql);
 			$lin = mysqli_affected_rows($con);
 			
@@ -28,7 +28,7 @@
 				echo "<a href='form_cad.html'>Tentar outro email</a>";
 			}else{
 			
-				$sql = "INSERT INTO tb_login VALUES (NULL,'$vlogin','$vsenha','$vemail')";
+				$sql = "INSERT INTO tb_login VALUES (NULL,'$vlogin','$vsenha','$vemail')"; // Alterar, caso tenha criado uma tabela com nome diferente
 				mysqli_query($con,$sql);
 				$lin = mysqli_affected_rows($con);
 
