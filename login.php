@@ -9,12 +9,12 @@
 		
 		include "conexao.inc";
 		
-		$sql = "SELECT * FROM tb_login WHERE login = '$vlogin'";
+		$sql = "SELECT * FROM tb_login WHERE login = '$vlogin'"; // Alterar, caso tenha criado uma tabela com nome diferente
 		$res = mysqli_query($con,$sql);
 		$lin = mysqli_affected_rows($con);
 		
 		if($lin == 1){
-			$sql = "SELECT * FROM tb_login WHERE login = '$vlogin' AND senha = $vsenha";
+			$sql = "SELECT * FROM tb_login WHERE login = '$vlogin' AND senha = $vsenha"; // Alterar, caso tenha criado uma tabela com nome diferente
 			$res = mysqli_query($con,$sql);
 			$lin = mysqli_affected_rows($con);
 		
